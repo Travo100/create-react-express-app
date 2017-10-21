@@ -10,11 +10,20 @@ module.exports = {
       query: req.params.query,
       key,
     };
-    console.log('params:', params);
+
     return axios.get(textSearchUrl, { params })
       .then((response) => {
-        console.log(response.request);
-        res.json(response.data);
+        const places = response.data.results || [];
+        const { status } = response.data;
+
+        // send array of up to 5 results from google places api
+        if (status === 'OK' || status === 'ZERO_RESULTS ') {
+          if (places.length < 5) return res.json(places);
+          return res.json(places.slice(0, 5));
+        }
+
+        // send google status code
+        return res.json({ status });
       })
       .catch(error => res.json(error));
   },
