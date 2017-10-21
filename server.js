@@ -18,7 +18,11 @@ mongoose.connect(
   { useMongoClient: true }
 );
 
-app.use(routes);
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+}
+
+app.use('/', routes);
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
