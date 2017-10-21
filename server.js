@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const routes = require('./routes');
+const User = require('./models/users.js');
 
 
 // Configure Express Sever
@@ -18,8 +19,14 @@ mongoose.connect(
   { useMongoClient: true }
 );
 
+// routes
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+}
 app.use(routes);
+
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
+
 });

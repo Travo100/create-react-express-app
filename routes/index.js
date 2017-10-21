@@ -1,14 +1,11 @@
 const path = require('path');
 const express = require('express');
-// const apiRoutes = require('./api');
+const apiRoutes = require('./api');
 
-// API Routes
-// router.use('/users', apiRoutes);
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-}
 const router = express.Router();
+
+// API Routes TODO FIX API ROUTING!!!
+router.use('/api', apiRoutes);
 
 
 // TEST ROUTES
@@ -35,9 +32,9 @@ router.post('/new', (req, res) => {
 // Serve up react client
 router.get('*', (req, res) => {
   if (process.env.NODE_ENV === 'production') {
-    res.sendFile(`${__dirname}./client/build/index.html`);
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
   } else {
-    res.sendFile(`${__dirname}./client/public/index.html`);
+    res.sendFile(path.join(__dirname, '../client/public/index.html'));
   }
 });
 
