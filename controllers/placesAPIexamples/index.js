@@ -1,3 +1,11 @@
+function details(expressResponse, locationId) {
+  console.log(locationId);
+  if (locationId === 'ChIJO6ypIwBu5kcRKlGBjcGwc6Q') {
+    return expressResponse.json(require('./details/example1.json'));
+  }
+  expressResponse.json({ status: 'ZERO_RESULTS'});
+}
+
 function textSearch(expressResponse, query) {
   console.log(query);
   if (query === 'art galleries in Paris, France') {
@@ -8,4 +16,4 @@ function textSearch(expressResponse, query) {
   expressResponse.json([]);
 }
 
-module.exports = { textSearch };
+module.exports = { details, textSearch };

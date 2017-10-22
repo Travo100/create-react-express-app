@@ -1,0 +1,312 @@
+{
+  "address_components": [
+      {
+          "long_name": "23",
+          "short_name": "23",
+          "types": [
+              "street_number"
+          ]
+      },
+      {
+          "long_name": "Place des Vosges",
+          "short_name": "Place des Vosges",
+          "types": [
+              "route"
+          ]
+      },
+      {
+          "long_name": "Paris",
+          "short_name": "Paris",
+          "types": [
+              "locality",
+              "political"
+          ]
+      },
+      {
+          "long_name": "Paris",
+          "short_name": "Paris",
+          "types": [
+              "administrative_area_level_2",
+              "political"
+          ]
+      },
+      {
+          "long_name": "Île-de-France",
+          "short_name": "Île-de-France",
+          "types": [
+              "administrative_area_level_1",
+              "political"
+          ]
+      },
+      {
+          "long_name": "France",
+          "short_name": "FR",
+          "types": [
+              "country",
+              "political"
+          ]
+      },
+      {
+          "long_name": "75003",
+          "short_name": "75003",
+          "types": [
+              "postal_code"
+          ]
+      }
+  ],
+  "adr_address": "<span class=\"street-address\">23 Place des Vosges</span>, <span class=\"postal-code\">75003</span> <span class=\"locality\">Paris</span>, <span class=\"country-name\">France</span>",
+  "formatted_address": "23 Place des Vosges, 75003 Paris, France",
+  "formatted_phone_number": "01 42 78 10 10",
+  "geometry": {
+      "location": {
+          "lat": 48.856365,
+          "lng": 2.365225
+      },
+      "viewport": {
+          "northeast": {
+              "lat": 48.85767283029151,
+              "lng": 2.366557930291502
+          },
+          "southwest": {
+              "lat": 48.85497486970851,
+              "lng": 2.363859969708498
+          }
+      }
+  },
+  "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+  "id": "9a20e243a1c7c0c4446cb7cf71c3e250d96618c3",
+  "international_phone_number": "+33 1 42 78 10 10",
+  "name": "Modus Art Gallery",
+  "opening_hours": {
+      "open_now": false,
+      "periods": [
+          {
+              "close": {
+                  "day": 0,
+                  "time": "2030"
+              },
+              "open": {
+                  "day": 0,
+                  "time": "1000"
+              }
+          },
+          {
+              "close": {
+                  "day": 1,
+                  "time": "2030"
+              },
+              "open": {
+                  "day": 1,
+                  "time": "1000"
+              }
+          },
+          {
+              "close": {
+                  "day": 2,
+                  "time": "2030"
+              },
+              "open": {
+                  "day": 2,
+                  "time": "1000"
+              }
+          },
+          {
+              "close": {
+                  "day": 3,
+                  "time": "2030"
+              },
+              "open": {
+                  "day": 3,
+                  "time": "1000"
+              }
+          },
+          {
+              "close": {
+                  "day": 4,
+                  "time": "2030"
+              },
+              "open": {
+                  "day": 4,
+                  "time": "1000"
+              }
+          },
+          {
+              "close": {
+                  "day": 5,
+                  "time": "2030"
+              },
+              "open": {
+                  "day": 5,
+                  "time": "1000"
+              }
+          },
+          {
+              "close": {
+                  "day": 6,
+                  "time": "2030"
+              },
+              "open": {
+                  "day": 6,
+                  "time": "1000"
+              }
+          }
+      ],
+      "weekday_text": [
+          "Monday: 10:00 AM – 8:30 PM",
+          "Tuesday: 10:00 AM – 8:30 PM",
+          "Wednesday: 10:00 AM – 8:30 PM",
+          "Thursday: 10:00 AM – 8:30 PM",
+          "Friday: 10:00 AM – 8:30 PM",
+          "Saturday: 10:00 AM – 8:30 PM",
+          "Sunday: 10:00 AM – 8:30 PM"
+      ]
+  },
+  "photos": [
+      {
+          "height": 2048,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAALZlWosMlsXKlK__JEiq5YWJPeAI7KSjt2rpSOJBLMAplCXQB3Vkknh63hvlJeVJlPci9-ZQoxtpP1vvi0UI_n28Osj_aW0cTBR7jgYAl3CAdn-xP8S3cnvbofwXx4UkGEhDotiFuJrEJTv1aExfDIsheGhSM2jqQ9Nwl6litKGnZDJKpq-yLvQ",
+          "width": 1612
+      },
+      {
+          "height": 720,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAAtRenReAVjtf5h20CrqQu-qadnXO_07I2kcgh9DuL0IPE5pf4_WT5Irpa3aLFxUdT9240SNDxEU3FlSj9XTiW2XAPFj_2z6935wcy0a4vEqW7rX-WTktW93whDlwRUfq9EhCS7aOOxo2HqVYFiVULFixfGhTZizpBxg5CIbULoER3TjqB398MSA",
+          "width": 960
+      },
+      {
+          "height": 2503,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAA2ow4x1svKOFe7LreduzuhHYuVb4Q3z-otk85RaoFZL61uKtTgykwAmHmBhiNpPUU6OBp-B7lPvD05DKWdDvt7YulzJREEOZpmM8x9CZY3ZHjnpdGEJJ2SGkGKo8dQRs6EhDdyrOXcaDxQIMbLfRS4nKDGhRQQEC2QZCEwMa1hGyBrbxeRPcNgA",
+          "width": 3419
+      },
+      {
+          "height": 640,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAAydIkvYU5C_-MxMNHoQdyGeMeOXESs0so-ATPiW5-GvbSJfinsxnY-ieBrXGfuAi39AJsm6dMFGUrxDhfZBcchoiVFpuuGAhxb4I0SjRq579QVCVusB0xIG6NfPABm7FgEhCXiEK1XHvQx_k36S3H4_ZeGhSGH6Xd5PnELdlgkQXxC_iHq_BHEw",
+          "width": 892
+      },
+      {
+          "height": 740,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAAmIxSKWihyd6tPVG-uCQZQf-sXkAjeJoA657T2oC_3Tn54S2bskDFlgG5TLxIRt2wZ0XLlJbBtJajGxEGVC3ld_icqq_UWa4B09j8PZKqw-F2mKMJQG97kXwbKo7wyD8jEhArEYYSNR6Y9zbRMtiO6DKhGhT7x0tkEGFI7Whyr27eIhBO2UCWVg",
+          "width": 960
+      },
+      {
+          "height": 576,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAAZXHiohuzEtchllfNSHuA4plIwI0MFvkxCnwjCZgQW5EAAWfsZj1IdQl7-R3amM4Ii3gAWyeJ7vW5EFXpnGU_-ryABmXlWwhxm2x-1e0kFOrQnmf5WnjgFUKqsNvGYWDuEhDT8nAq7zxSI21HyNGSR_CJGhSWViroK--D1-VWflNPDay9MzbE0A",
+          "width": 1024
+      },
+      {
+          "height": 2700,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105085278333970549730/photos\">From a Google User</a>"
+          ],
+          "photo_reference": "CmRaAAAA18jJvFimY5q6Hb0bvPcX5S0I_weRHZFxf-bVRe118uyzGtt7mUrBiArqf9s-xWH0aw0HSJ4EIcDtmRi4szFJeDtJeWtXVbMEShKxSxjKN79AqOe2w4jvQByOmrVDBO3gEhBp105gv5zN3Q11As7JdWeaGhQlawZkb8NEX50YK5w6Mxwnu7pYVQ",
+          "width": 2448
+      },
+      {
+          "height": 1350,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAAsKVe38kHeaCbV1ZuyndCTHTsoYDlV2IzkF_EM8oE7lfL9-MoeWwuvQ4dPZqATYhtit-f4mYYvKUOH1CEhD8cqRZK0vDq-ctIQaue1zKm5Ioi0niSS4xrKmtv9Mq1nzpIEhBaL9YOIrQ0zhZ7F38ZocxuGhRs7597kO0CyPyUkeeemaiV347hOg",
+          "width": 1080
+      },
+      {
+          "height": 810,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAA4HnUaOaUkguoUFS8xKz60qUuNJEUCu35yV9QLTKM9Y5vFdQ_4y3hIxI5MdXHogDDxqA21EVRnQcn1kGAtY5FnW4WrqvEESMI2vIdWx7nYt2BOEtTCN-ouyrJUBrTGorUEhDxiQOeaxpuJr5qQAjbe8MaGhShZdZ-AsydXaoO5V8u2NWhKnYfoQ",
+          "width": 1080
+      },
+      {
+          "height": 1080,
+          "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+          ],
+          "photo_reference": "CmRaAAAASfL4FYD9RY5nRp-CUw6rp_tPan_a555ReH0Cg044lMl_xYlyB87GJKzFHSiANO4Z2_W1Pjv_tfTXnCwS5wNS_vtktNdlny3H2rZY7C-Vk4FyZTS8MD8qW9Q3a9j9vf4VEhCwAX5X4iGWH4gNTTuFnQSjGhSuChHncdmj7AH69v_Wnzstev2abg",
+          "width": 1080
+      }
+  ],
+  "place_id": "ChIJO6ypIwBu5kcRKlGBjcGwc6Q",
+  "rating": 4.8,
+  "reference": "CmRSAAAAzG0IjRmj5PY2G2wRDqPg9PR2Ry5lR5ke0CoLBizPUErHvELQYOCrzSorZ6uex_aJlRX-Ba30804qcW9k8CHyjDtAPdtQdn78O4vCUEQpC7HPNmxmvZSQBfF9McPWYp6iEhAPJFrtbY9Rw5rEMcv8B5wYGhQ4_4DIYDka7weTmpvIyDhoax-RHA",
+  "reviews": [
+      {
+          "author_name": "Adrián Blanco Paradelo",
+          "author_url": "https://www.google.com/maps/contrib/103053679422901888668/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-mdsJM-w4Nrg/AAAAAAAAAAI/AAAAAAAACVk/bo0-G6VcaJo/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This cozy art gallery located in the Parisian Place des Vosges contains an excellent selection of numerous excellent artists: sculptors such as Bruno Catalano, Jesus Curia, or Marta Sanchez Luengo, painters like Javier Leon Perez, photographers and even street artists! An art gallery not to miss in Paris. \nUna galeria de arte para visitar en Paris con excelentes artistas españoles y latinoamericanos.",
+          "time": 1497960080
+      },
+      {
+          "author_name": "guo wshu",
+          "author_url": "https://www.google.com/maps/contrib/118276682050843378838/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-Go1wB2RR1kk/AAAAAAAAAAI/AAAAAAAAAAA/ANQ0kf6V4DP_6Iat-GJC0WKxux5lF8HDIQ/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "The Musee du Quai Branly is part of a two stop afternoon near Eiffel Tower. This is a beautifully presented collection of art from many cultures with quality works presented impeccably. The staff and museum guards are helpful and FRIENDLY! I had more than a couple nice conversations about the art with staff that cared about the art and helping you make a connection to the collections.",
+          "time": 1483305928
+      },
+      {
+          "author_name": "mariedewaguet",
+          "author_url": "https://www.google.com/maps/contrib/113577655432271071253/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-eo1f8lnvOdQ/AAAAAAAAAAI/AAAAAAAAAAA/ANQ0kf5PyLWI5FKf-oGQjMX4PwR8IgxNHQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Beautiful Gallery with amazing artists!",
+          "time": 1497962872
+      },
+      {
+          "author_name": "Joseph Dermody",
+          "author_url": "https://www.google.com/maps/contrib/102288456547684813251/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-Z8VHPd2NGJo/AAAAAAAAAAI/AAAAAAAAAZ8/brrCKMyA9Vk/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Fun and vibrant contemporary art!\n",
+          "time": 1470400636
+      },
+      {
+          "author_name": "Kif Yeya",
+          "author_url": "https://www.google.com/maps/contrib/100877365741449165191/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-YzArmj9Vs5A/AAAAAAAAAAI/AAAAAAAABAA/Xu2YBr2g3J0/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great Gallery, Serious Wooks",
+          "time": 1472128399
+      }
+  ],
+  "scope": "GOOGLE",
+  "types": [
+      "art_gallery",
+      "museum",
+      "point_of_interest",
+      "establishment"
+  ],
+  "url": "https://maps.google.com/?cid=11850009389891146026",
+  "utc_offset": 120,
+  "vicinity": "23 Place des Vosges, Paris",
+  "website": "http://www.modus-gallery.com/"
+}

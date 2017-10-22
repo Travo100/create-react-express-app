@@ -3,6 +3,7 @@ const axios = require('axios');
 // set to true to use example files for google api instead of sending requests
 // (use for front end development)
 const USE_MOCK = true;
+const mocks = require('./placesAPIexamples');
 
 // Controller for the google places api
 const key = 'AIzaSyAHO4q-p7lzrf6zVUXcifYSEDwAz4p5Dds';
@@ -22,10 +23,17 @@ function getDetailsById(placeid) {
 // google placeid. Expects req.body to be json.
 // View the response format here: https://developers.google.com/places/web-service/details#PlaceDetailsResponses
 function getPlaceDetails(req, res) {
+
+  // use mockups for google api request
+  if (USE_MOCK) {
+    return mocks.details(res, req.body.placeid);
+  }
+  
   getDetailsById(req.body.placeid)
     .then((response) => {
       const details = response.data.result;
       const { status } = response.data;
+
 
       // return details if google status message is 'OK'
       if (status === 'OK') return res.json(details);
@@ -49,7 +57,7 @@ function textSearch(req, res) {
 
   // use mockups for google api requests
   if (USE_MOCK) {
-    return require('./placesAPIexamples').textSearch(res, params.query);
+    return mocks.textSearch(res, params.query);
   }
 
   axios.get(textSearchUrl, { params })
