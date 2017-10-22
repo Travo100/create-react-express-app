@@ -2,11 +2,15 @@
 
 import React from 'react';
 
+// COMPONENTS
+import Button from './Button';
+
 const ResultItem = (props) => (
   <li>
     <p>{props.title}</p>
     <p>{props.address}</p>
-    {props.children}
+    <Button handleClick={props.handleViewClick}>View</Button>
+    <Button handleClick={props.handlePinClick}>Pin</Button>
   </li>
 );
 export default ResultItem;

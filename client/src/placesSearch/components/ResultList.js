@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 // component for rendering a place
-import ResultItemContainer from '../containers/ResultItemContainer'
-
+import ResultItemContainer from '../containers/ResultItemContainer';
 
 // Returns a ResultItemContainer component
 const createResultItemContainer = (place) => {
