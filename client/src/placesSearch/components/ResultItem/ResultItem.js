@@ -2,9 +2,14 @@
 
 import React from 'react';
 
+// COMPONENTS
+import Button from './Button';
+
 const ResultItem = (props) => (
-  <li key={props.placeId}>
-    <pre>{JSON.stringify(props, null, 2)}</pre>
+  <li>
+    <p>{props.title}</p>
+    <p>{props.address}</p>
+    {props.children}
   </li>
 );
 export default ResultItem;

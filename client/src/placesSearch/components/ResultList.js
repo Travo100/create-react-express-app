@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // component for rendering a place
-import ResultItem from './ResultItem';
+import ResultItem from './ResultItem/ResultItem';
+import Button from './ResultItem/Button';
 
-const ResultList = (props) => (
-  <ul style={{ textAlign: 'left' }}>
-    {
-      // render each place in props.places or render an empty list
-      props.places ?
-        props.places.map(place => <ResultItem {...place}/>)
-        : ""
-    }
-  </ul>
-);
+
+// Returns a ResultItem component
+function createResultItem(place) {
+  return (
+    <ResultItem key={place.placeId} {...place}>
+      <Button>View</Button>
+      <Button>Pin</Button>
+    </ResultItem>
+  );
+}
+
+class ResultList extends Component {
+  render() {
+    const { places } = this.props;
+    return (
+      <ul style={{ textAlign: 'left' }}>
+        {places ? places.map(createResultItem) : ''}
+      </ul>
+    );
+  }
+}
 export default ResultList;
