@@ -1,5 +1,9 @@
 const axios = require('axios');
 
+// set to true to use example files for google api instead of sending requests
+// (use for front end development)
+const USE_MOCK = true;
+
 // Controller for the google places api
 const key = 'AIzaSyAHO4q-p7lzrf6zVUXcifYSEDwAz4p5Dds';
 const placesHostUrl = 'https://maps.googleapis.com/maps/api/place/';
@@ -42,6 +46,11 @@ function textSearch(req, res) {
     query: req.params.query,
     key,
   };
+
+  // use mockups for google api requests
+  if (USE_MOCK) {
+    return require('./placesAPIexamples').textSearch(res, params.query);
+  }
 
   axios.get(textSearchUrl, { params })
     .then((response) => {
