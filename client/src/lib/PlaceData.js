@@ -3,6 +3,7 @@
 export default class PlaceData {
   // Excepts an object from the array returned by /places/search api endpoint
   constructor(googleSearchResult) {
+    console.log(googleSearchResult);
     // true if details have been loaded from /places/details
     this.detailsLoaded = false;
 
@@ -14,7 +15,7 @@ export default class PlaceData {
     // additional properties from google search api result
     this.address = googleSearchResult.formatted_address || '';  // String
     this.categories = googleSearchResult.types || [];           // array of one or more Strings
-    this.stars = this.rating || 'no rating';                    // numeric string if available (ex. '4.8')
+    this.stars = googleSearchResult.rating || 'no rating';                    // numeric string if available (ex. '4.8')
     this.photos = googleSearchResult.photos || [];              // Array of photo objects per google places search api
     
     // set initial values for properties only available through the details api
