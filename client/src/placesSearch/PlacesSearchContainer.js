@@ -11,6 +11,7 @@ import axios from 'axios';
 
 // COMPONENTS
 import SearchForm from './components/SearchForm';
+import ResultList from './components/ResultList.js';
 
 class PlacesSearchContainer extends Component {
   constructor(props) {
@@ -37,21 +38,29 @@ class PlacesSearchContainer extends Component {
     this.loadPlaces(this.state.searchValue);
   }
 
-  // Reques places from server.
+  // Request places from server.
   loadPlaces(queryString) {
     return axios.get(`/places/search/${queryString}`)
-      .then(console.log);
+      .then((result) => {
+        if (result.statusText === 'OK') {
+          return this.setState({ places: result.data });
+        }
+        return console.log(result);
+      })
       // TODO add error handling
+      .catch(console.log);
   }
-
 
   render() {
     return (
-      <SearchForm
-        searchValue={this.state.searchValue}
-        handleSubmit={e => this.handleSubmit(e)}
-        handleSearchChange={e => this.handleTextInputChange(e)}
-      />
+      <div>
+        <SearchForm
+          searchValue={this.state.searchValue}
+          handleSubmit={e => this.handleSubmit(e)}
+          handleSearchChange={e => this.handleTextInputChange(e)}
+        />
+        <ResultList places={this.state.places}/>
+      </div>
     );
   }
 }
