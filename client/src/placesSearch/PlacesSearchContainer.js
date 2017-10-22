@@ -15,7 +15,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 // COMPONENTS
-import TextInput from './TextInput';
+import SearchForm from './SearchForm';
 
 class PlacesSearchContainer extends Component {
   constructor(props) {
@@ -37,7 +37,11 @@ class PlacesSearchContainer extends Component {
 
   render() {
     return (
-      <TextInput searchValue={this.state.searchValue} onChange={e => this.handleTextInputChange(e)} />
+      <SearchForm
+        searchValue={this.state.searchValue}
+        handleSubmit={e => window.alert('clicked submit')}
+        handleSearchChange={e => this.handleTextInputChange(e)}
+      />
     );
   }
 }
