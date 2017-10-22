@@ -8,6 +8,7 @@
 // DEPENDENCIES
 import React, { Component } from 'react';
 import axios from 'axios';
+import PlaceData from '../lib/PlaceData'; // PlaceData class
 
 // COMPONENTS
 import SearchForm from './components/SearchForm';
@@ -21,6 +22,8 @@ class PlacesSearchContainer extends Component {
       searchValue: "art galleries in Paris, France"
     };
   }
+
+  // Maps an object from the google search result to 
 
   // When a user types text in the input box, the searchValue state should be updated.
   handleTextInputChange(event) {
@@ -43,7 +46,9 @@ class PlacesSearchContainer extends Component {
     return axios.get(`/places/search/${queryString}`)
       .then((result) => {
         if (result.statusText === 'OK') {
-          return this.setState({ places: result.data });
+          // get an array of PlaceData objects from the results
+          const places = result.data.map(value => new PlaceData(value));
+          return this.setState({ places: places });
         }
         return console.log(result);
       })
