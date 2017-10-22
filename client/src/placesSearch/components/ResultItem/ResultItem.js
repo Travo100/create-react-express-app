@@ -2,9 +2,6 @@
 
 import React from 'react';
 
-// COMPONENTS
-import Button from './Button';
-
 const ResultItem = (props) => (
   <li>
     <p>{props.title}</p>

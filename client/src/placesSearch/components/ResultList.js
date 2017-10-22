@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
 
 // component for rendering a place
-import ResultItem from './ResultItem/ResultItem';
-import Button from './ResultItem/Button';
+import ResultItemContainer from '../containers/ResultItemContainer'
 
 
-// Returns a ResultItem component
-function createResultItem(place) {
+// Returns a ResultItemContainer component
+const createResultItemContainer = (place) => {
   return (
-    <ResultItem key={place.placeId} {...place}>
-      <Button>View</Button>
-      <Button>Pin</Button>
-    </ResultItem>
+    <ResultItemContainer key={place.placeId} place={place} />
   );
 }
 
-class ResultList extends Component {
-  render() {
-    const { places } = this.props;
-    return (
-      <ul style={{ textAlign: 'left' }}>
-        {places ? places.map(createResultItem) : ''}
-      </ul>
-    );
-  }
-}
+const ResultList = ({ places }) => {
+  return (
+    <ul style={{ textAlign: 'left' }}>
+      {places ? places.map(createResultItemContainer) : ''}
+    </ul>
+  );
+};
 export default ResultList;
