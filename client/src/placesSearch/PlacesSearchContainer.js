@@ -2,11 +2,6 @@
 
 // This container component handles the behavior of the google search.
 
-// TODO Displays a text input  and submit button allowing a user to search for points of interest from the
-// google places api.
-
-// When a user types text in the input box, the searchValue state should be updated.
-
 // TODO When a user clicks the submit button, the /places/search api is sent a request for search results.
 // The results of this request should be displayed to the user.
 
@@ -28,18 +23,31 @@ class PlacesSearchContainer extends Component {
 
   // When a user types text in the input box, the searchValue state should be updated.
   handleTextInputChange(event) {
-    this.setState({ searchValue: event.target.value });
+    this.setState({
+      searchValue: event.target.value,
+      places: [],
+    });
   }
 
   // TODO When a user clicks the submit button, the /places/search api is sent a request for search results.
   // The results of this request should be displayed to the user.
+  handleSubmit(event) {
+    event.preventDefault();
+    // window.alert(`Search for ${this.state.searchValue}`);
+    this.loadPlaces(this.state.searchValue);
+  }
+
+  loadPlaces(queryString) {
+    return axios.get(`/places/search/${queryString}`)
+      .then(console.log);    
+  }
 
 
   render() {
     return (
       <SearchForm
         searchValue={this.state.searchValue}
-        handleSubmit={e => window.alert('clicked submit')}
+        handleSubmit={e => this.handleSubmit(e)}
         handleSearchChange={e => this.handleTextInputChange(e)}
       />
     );
