@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 // COMPONENTS
-import SearchForm from './SearchForm';
+import SearchForm from './components/SearchForm';
 
 class PlacesSearchContainer extends Component {
   constructor(props) {
@@ -37,9 +37,11 @@ class PlacesSearchContainer extends Component {
     this.loadPlaces(this.state.searchValue);
   }
 
+  // Reques places from server.
   loadPlaces(queryString) {
     return axios.get(`/places/search/${queryString}`)
-      .then(console.log);    
+      .then(console.log);
+      // TODO add error handling
   }
 
 
