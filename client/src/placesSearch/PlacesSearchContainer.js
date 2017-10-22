@@ -54,6 +54,8 @@ class PlacesSearchContainer extends Component {
   render() {
     return (
       <div>
+        {/* notes to render for development */}
+        <p>Search is hard coded for testing. Will not work if you use search terms other than the default value when the page loads.</p>
         <SearchForm
           searchValue={this.state.searchValue}
           handleSubmit={e => this.handleSubmit(e)}

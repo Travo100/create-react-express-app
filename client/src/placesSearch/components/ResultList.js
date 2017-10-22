@@ -1,17 +1,15 @@
 import React from 'react';
 
+// component for rendering a place
+import ResultItem from './ResultItem';
+
 const ResultList = (props) => (
-  <ul>
+  <ul style={{ textAlign: 'left' }}>
     {
-      // render a list item with pretty printed json for each item. use place_id property
-      // as the key for each li
+      // render each place in props.places or render an empty list
       props.places ?
-      props.places.map(place => (
-        <li key={place.place_id}>
-          <pre>{JSON.stringify(place, null, 2)}</pre>
-        </li>
-      ))
-      : ""
+        props.places.map(place => <ResultItem {...place}/>)
+        : ""
     }
   </ul>
 );
