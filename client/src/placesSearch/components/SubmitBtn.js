@@ -1,6 +1,5 @@
 import React from 'react';
 
-const SubmitBtn = (props) => (
-  <button type="submit" onClick={props.handleClick}>Search</button>
-);
-export default SubmitBtn;
+export default function SubmitBtn ( props ) {
+    return <button type="submit" onClick={props.handleClick}>Search</button>;
+}
