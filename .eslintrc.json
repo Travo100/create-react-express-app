@@ -2,7 +2,8 @@
     "extends": "standard",
     "plugins": [
         "standard",
-        "html"
+        "html",
+        "react"
     ],
     "settings":{
         "html/indent": "+4",
@@ -19,6 +20,11 @@
         "_": true,
         "moment": true,
         "firebase": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "rules": {
         "indent": [
