@@ -1,0 +1,112 @@
+{
+    "extends": "standard",
+    "plugins": [
+        "standard",
+        "html"
+    ],
+    "settings":{
+        "html/indent": "+4",
+        "html/report-bad-indent": "error"
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery": true,
+        "es6": true,
+        "mocha": true
+    },
+    "globals": {
+        "_": true,
+        "moment": true,
+        "firebase": true
+    },
+    "rules": {
+        "indent": [
+            2,
+            4,
+		{"SwitchCase": 1}
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "quote-props": [
+            2,
+            "always"
+        ],
+        "eqeqeq": [
+            2,
+            "always"
+        ],
+        "no-implicit-coercion": [
+            2,
+            {
+                "boolean": true,
+                "number": true,
+                "string": true
+            }
+        ],
+        "no-undef-init": [
+            2
+        ],
+        "callback-return": [
+            2,
+            [
+                "done",
+                "callback",
+                "cb",
+                "next"
+            ]
+        ],
+        "global-require": [
+            2
+        ],
+        "handle-callback-err": [
+            2,
+            "^(e|R)rr"
+        ],
+        "no-new-require": [
+            2
+        ],
+        "no-path-concat": [
+            2
+        ],
+        "max-nested-callbacks": [
+            1,
+            {
+                "max": 5
+            }
+        ],
+        "func-style": [
+            2,
+            "declaration"
+        ],
+        "id-length": [
+            2,
+            {
+                "min": 2,
+                "max": 25,
+                "exceptions": [
+                    "x",
+                    "i",
+                    "y",
+                    "_"
+                ]
+            }
+        ],
+        "camelcase": [
+            2,
+            {
+                "properties": "always"
+            }
+        ],
+        "space-in-parens": [
+            1,
+            "always"
+        ],
+        "space-before-function-paren": [
+            1,
+            "always"
+        ]
+    }
+}
