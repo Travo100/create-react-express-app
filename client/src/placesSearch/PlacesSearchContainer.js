@@ -1,13 +1,9 @@
 // Top Level Container for the Google Places Search
-
-// This container component handles the behavior of the google search.
-
-// TODO When a user clicks the submit button, the /places/search api is sent a request for search results.
-// The results of this request should be displayed to the user.
+// This container component handles the behavior of the places search view.
 
 // DEPENDENCIES
 import React, { Component } from 'react';
-import axios from 'axios';
+import placesAPI from '../lib/placesAPI';
 import PlaceData from '../lib/PlaceData'; // PlaceData class
 
 // COMPONENTS
@@ -22,8 +18,6 @@ class PlacesSearchContainer extends Component {
             'searchValue': 'art galleries in Paris, France'
         };
     }
-
-    // Maps an object from the google search result to 
 
     // When a user types text in the input box, the searchValue state should be updated.
     handleTextInputChange ( event ) {
@@ -43,16 +37,13 @@ class PlacesSearchContainer extends Component {
 
     // Request places from server.
     loadPlaces ( queryString ) {
-        return axios.get( `/places/search/${queryString}` )
+        return placesAPI.textSearch( queryString )
             .then( ( result ) => {
-                if ( result.statusText === 'OK' ) {
-                    // get an array of PlaceData objects from the results
-                    const places = result.data.map( value => new PlaceData( value ) );
-                    return this.setState( { 'places': places } );
-                }
-                return console.log( result );
-            } )
-        // TODO add error handling
+                // get an array of PlaceData objects from the results
+                const places = result.map( value => new PlaceData( value ) );
+                return this.setState( { 'places': places } );
+            })
+            // Unexpected error occured. Log it.
             .catch( console.log );
     }
 

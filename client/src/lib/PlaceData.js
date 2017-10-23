@@ -3,7 +3,6 @@
 export default class PlaceData {
     // Excepts an object from the array returned by /places/search api endpoint
     constructor ( googleSearchResult ) {
-        console.log( googleSearchResult );
         // true if details have been loaded from /places/details
         this.detailsLoaded = false;
 
