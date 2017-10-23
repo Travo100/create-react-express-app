@@ -6,7 +6,6 @@ const tripSchema = new Schema( {
     'tripName': {
         'type': String,
         'required': true,
-        'unique': true
     },
     'placeIds': {
         'type': Array,
@@ -20,11 +19,14 @@ const tripSchema = new Schema( {
     'lastUpdated': {
         'type': Date,
         'default': Date.now
+    },
+    'ownerId': {
+        'type': Number,
+        'required': true,
+        'unique': true
     }
 } );
 
 const Trip = mongoose.model( 'Trip', userSchema );
 
 module.exports = Trip;
-
-// owner id will automatically get created by mongoose? 
