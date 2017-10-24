@@ -48,7 +48,7 @@ class App extends Component {
           )}/>
 
           <Route exact={true} path="/dashboard" component={Banner}/> 
-          <Route exact={true} path="/dashboard" component={Corkboard}/> 
+          <Route exact={true} path="/dashboard" component={Corkboard}/>
           
           <Route exact={true} path="/dashboard" render={() => ( 
           
