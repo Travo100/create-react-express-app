@@ -26,6 +26,7 @@
             "jsx": true
         }
     },
+    "root": true,
     "rules": {
         "indent": [
             2,
