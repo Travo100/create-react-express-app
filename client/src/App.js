@@ -11,6 +11,12 @@ import Corkboard from "./components/Corkboard";
 import { Button, Icon, SideNav, SideNavItem, Footer } from 'react-materialize';
 import PlacesSearchComponent from './placesSearch/PlacesSearchContainer';
 
+const routes = {
+  dash: '/dashboard',
+  set: '/settings',
+  log: '/logout'
+}
+
 class App extends Component {
   render() {
     return (
@@ -39,11 +45,10 @@ class App extends Component {
           )}/>
 
           <Route exact={true} path="/dashboard" render={() => ( 
-            <Button floating fab='horizontal click-to-toggle userFAB' icon='mode_edit' className='red' large style={{bottom: '45px', right: '24px'}}>
-              <Button floating icon='insert_chart' className='red' />
-              <Button floating icon='format_quote' className='yellow darken-1'/>
-              <Button floating icon='publish' className='green'/>
-              <Button floating icon='attach_file' className='blue'/>
+            <Button floating fab='horizontal click-to-toggle userFAB' icon='mode_edit' className='' large style={{bottom: '45px', right: '24px'}}>
+              <Button floating icon='airplanemode_active' className='green' href={routes.dash} />
+              <Button floating icon='account_circle' className='yellow darken-1' href={routes.set} />
+              <Button floating icon='power_settings_new' className='red' href={routes.log} />
             </Button>
           )}/>
 
