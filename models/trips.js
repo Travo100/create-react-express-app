@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 const tripSchema = new Schema( {
     'tripName': {
         'type': String,
-        'required': true,
+        'required': true
     },
     'placeIds': {
         'type': Array,
@@ -27,6 +27,6 @@ const tripSchema = new Schema( {
     }
 } );
 
-const Trip = mongoose.model( 'Trip', userSchema );
+const Trip = mongoose.model( 'Trip', tripSchema );
 
 module.exports = Trip;
