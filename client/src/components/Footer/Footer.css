@@ -1,0 +1,7 @@
+footer.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #2196f3;
+  }
