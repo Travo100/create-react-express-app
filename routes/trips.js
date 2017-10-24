@@ -13,4 +13,9 @@ router
     .route( '/' )
     .get( tripsController.findAll );
 
+// Route matches with "api/trips/:id"
+router
+    .route( '/:id' )
+    .put( tripsController.update );
+
 module.exports = router;

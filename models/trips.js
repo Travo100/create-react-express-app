@@ -9,7 +9,6 @@ const tripSchema = new Schema( {
     },
     'placeIds': {
         'type': Array,
-        'required': true,
         'maxLength': 12
     },
     'createdAt': {
@@ -21,7 +20,7 @@ const tripSchema = new Schema( {
         'default': Date.now
     },
     'ownerId': {
-        'type': Number,
+        'type': String,
         'required': true,
         'unique': true
     }
