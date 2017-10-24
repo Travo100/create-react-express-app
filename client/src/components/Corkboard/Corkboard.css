@@ -1,3 +1,5 @@
-.card-image .background-image {
-    background-image: url("../../images/japanPH.png");    
+.background-image {
+    height: 100%;
+    background-image: url("./paper.png");
+    background-size: cover;
 }
