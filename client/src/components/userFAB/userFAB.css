@@ -1,0 +1,6 @@
+.userFAB {
+    position: fixed;
+    right: 23px;
+    top: 23px;
+    z-index: 998;
+}
