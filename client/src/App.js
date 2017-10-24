@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import './components/searchbtn/searchbtn.css';
 import './components/userFAB/userFAB.css';
 import './components/Footer/Footer.css'; 
-import Wrapper from "./components/Wrapper";
 import Banner from "./components/Banner";
 import Corkboard from "./components/Corkboard";
-import { Button, Icon, SideNav, SideNavItem, Footer } from 'react-materialize';
+import { Button, SideNav, SideNavItem, Footer } from 'react-materialize';
 import PlacesSearchComponent from './placesSearch/PlacesSearchContainer';
-
-const routes = {
-  dash: '/dashboard',
-  set: '/settings',
-  log: '/logout'
-}
 
 class App extends Component {
   render() {
@@ -45,10 +38,10 @@ class App extends Component {
           )}/>
 
           <Route exact={true} path="/dashboard" render={() => ( 
-            <Button floating fab='horizontal click-to-toggle userFAB' icon='mode_edit' className='' large style={{bottom: '45px', right: '24px'}}>
-              <Button floating icon='airplanemode_active' className='green' href={routes.dash} />
-              <Button floating icon='account_circle' className='yellow darken-1' href={routes.set} />
-              <Button floating icon='power_settings_new' className='red' href={routes.log} />
+            <Button floating fab='horizontal click-to-toggle userFAB' icon='menu' className='' large style={{bottom: '45px', right: '24px'}}>
+              <a href='/dashboard'><Button floating icon='airplanemode_active' className='green' /></a>
+              <a href='/settings'><Button floating icon='account_circle' className='yellow darken-1' /></a>
+              <a href='/logout'><Button floating icon='power_settings_new' className='red' /></a>
             </Button>
           )}/>
 
