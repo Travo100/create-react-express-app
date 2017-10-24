@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import './components/Footer/Footer.css';
+import './components/searchbtn/searchbtn.css';
+import './components/userFAB/userFAB.css';
+import './components/Footer/Footer.css'; 
 
 import Wrapper from "./components/Wrapper";
 import Banner from "./components/Banner";
@@ -18,7 +20,7 @@ class App extends Component {
       <Router>
         <div>
           <SideNav
-            trigger={<Button>SIDE NAV DEMO</Button>}
+            trigger={<Button floating large className='searchbtn' waves='light' icon='add' />}
             options={{ closeOnClick: true }}
           >
             <SideNavItem userView
@@ -36,6 +38,13 @@ class App extends Component {
             <SideNavItem waves href='#!third'>Third Link With Waves</SideNavItem>
             <PlacesSearchComponent />
           </SideNav>
+
+          <Button floating fab='horizontal click-to-toggle userFAB' icon='mode_edit' className='red' large style={{bottom: '45px', right: '24px'}}>
+            <Button floating icon='insert_chart' className='red' />
+            <Button floating icon='format_quote' className='yellow darken-1'/>
+            <Button floating icon='publish' className='green'/>
+            <Button floating icon='attach_file' className='blue'/>
+          </Button>
 
           <Banner></Banner>
           <Corkboard></Corkboard>
