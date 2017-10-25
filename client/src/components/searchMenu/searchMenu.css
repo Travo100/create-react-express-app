@@ -1,0 +1,10 @@
+.searchbtn {
+    position: fixed;
+    left: 23px;
+    top: 23px;
+    z-index: 998;
+}
+
+.background {
+    background-image: url("./woodpanel.jpg");
+  }

@@ -3,8 +3,8 @@
 
 // DEPENDENCIES
 import React, { Component } from 'react';
-import placesAPI from '../lib/placesAPI';
-import PlaceData from '../lib/PlaceData'; // PlaceData class
+import placesAPI from '../../lib/placesAPI';
+import PlaceData from '../../lib/PlaceData'; // PlaceData class
 
 // COMPONENTS
 import SearchForm from './components/SearchForm';
