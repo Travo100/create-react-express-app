@@ -8,14 +8,20 @@ import './components/Footer/Footer.css';
 import Wrapper from "./components/Wrapper";
 import Banner from "./components/Banner";
 import Corkboard from "./components/Corkboard";
-import { Button, Icon, SideNav, SideNavItem, Footer } from 'react-materialize';
+import {Button, Icon, SideNav, SideNavItem, Footer } from 'react-materialize';
 import PlacesSearchComponent from './placesSearch/PlacesSearchContainer';
+
+// test about component
+import About from './components/LoginPage/About/About.js';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
+           
+          <Route exact={true} path="/" render={() => (<About />)} />
+
           <Route exact={true} path="/dashboard" render={() => ( 
             <SideNav
               trigger={<Button floating large className='searchbtn' waves='light' icon='add' />}
