@@ -4,12 +4,17 @@ const usersController = require( '../controllers/usersController' );
 
 router.use( '/*', bodyParser.json() );
 
-// Route matches with "api/user"
+// Route matches with "api/users"
 router
-    .route( '/user' )
+    .route( '/' )
     .post( usersController.create );
 
-// Route matches with "api/trips/login"
+// Route matches with "api/users/login"
+router
+    .route( '/login' )
+    .post( usersController.findOne );
+
+// Route matches with "api/users/:id"
 router
     .route( '/:id' )
     .put( usersController.update )

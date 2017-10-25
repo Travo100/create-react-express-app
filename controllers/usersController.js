@@ -20,6 +20,15 @@ module.exports = {
             .then( dbModel => dbModel.remove() )
             .then( dbModel => res.json( dbModel ) )
             .catch( err => res.status( 422 ).json( err ) );
+    },
+    'findOne': function ( req, res ) {
+        console.log( req.body );
+        User
+            .findOne( { 'userName': req.body.userName, 'password': req.body.password } )
+            .then( dbModel => {
+                if ( dbModel ) return res.json( dbModel );
+                return res.send( 'User name and password not found' );
+            } )
+            .catch( err => res.status( 422 ).json( err ) );
     }
-}
-;
+};
