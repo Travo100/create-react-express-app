@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
@@ -14,9 +15,16 @@ import LoginButton from "./components/landingPage/Login-RegisterPanel/loginButto
 import RegisterButton from "./components/landingPage/Login-RegisterPanel/registerButton/registerButton"
 import Logo from "./components/landingPage/logo/logo";
 import About from "./components/landingPage/about/about";
+=======
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import logo from './logo.svg';
+import './App.css';
+import Dashboard from './components/Dashboard';
+>>>>>>> 7cba550de9d6147fa8c76e260cb7674916d88396
 
 
 class App extends Component {
+<<<<<<< HEAD
   render() {
     return (
       <Router>  
@@ -87,6 +95,18 @@ class App extends Component {
       </Router>
     );
   }
+=======
+    render () {
+        return (
+            <Router>
+                <div>
+                    <Route exact={true} path="/" component={About} />
+                    <Route exact={true} path="/dashboard" component={Dashboard} />
+                </div>
+            </Router>
+        );
+    }
+>>>>>>> 7cba550de9d6147fa8c76e260cb7674916d88396
 }
 
 export default App;

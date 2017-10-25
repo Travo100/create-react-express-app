@@ -1,7 +1,7 @@
-const express = require( 'express' );
-const mongoose = require( 'mongoose' );
-const logger = require( 'morgan' );
-const routes = require( './routes' );
+const express = require('express');
+const logger = require('morgan');
+const mongoose = require('mongoose');
+const routes = require('./routes');
 
 // Configure Express Sever
 const PORT = process.env.PORT || 3001;
@@ -15,10 +15,10 @@ mongoose.connect(
     { 'useMongoClient': true }
 );
 
+// Setup routing
 if ( process.env.NODE_ENV === 'production' ) {
     app.use( express.static( 'client/build' ) );
 }
-
 app.use( '/', routes );
 
 app.listen( PORT, () => {
