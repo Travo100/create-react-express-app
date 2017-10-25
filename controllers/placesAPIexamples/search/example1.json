@@ -1,0 +1,214 @@
+[
+  {
+      "formatted_address": "23 Place des Vosges, 75003 Paris, France",
+      "geometry": {
+          "location": {
+              "lat": 48.856365,
+              "lng": 2.365225
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 48.85767283029151,
+                  "lng": 2.366557930291502
+              },
+              "southwest": {
+                  "lat": 48.85497486970851,
+                  "lng": 2.363859969708498
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "9a20e243a1c7c0c4446cb7cf71c3e250d96618c3",
+      "name": "Modus Art Gallery",
+      "opening_hours": {
+          "open_now": true,
+          "weekday_text": []
+      },
+      "photos": [
+          {
+              "height": 2048,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/106661715473239211404/photos\">Modus Art Gallery • Contemporary Art Paris • Bruno Catalano • Banksy • Pimax • Jesus Curia</a>"
+              ],
+              "photo_reference": "CmRaAAAAQoqHPucohcjmlbnAgGC4-d1TTrxlPUVKiZC4wwNMybvOLNgf7-dehQCRRkJ1Z-wPj05S3zgCE0u6dyr9FoRzhfsLRbFazhnYJLQ2nVVkudi7bfIYhgG5TE4cOS4ZvNBuEhCSRBeUyf2W8PhLV6fVqz9wGhTdTrobR4DuzGonZeU3LUTQi7zWiw",
+              "width": 1612
+          }
+      ],
+      "place_id": "ChIJO6ypIwBu5kcRKlGBjcGwc6Q",
+      "rating": 4.8,
+      "reference": "CmRSAAAAhMwf0wuYwVwCMFHqjPnzV4n5I4IsFr5pVrszirZPpzgLEZjrEH6mZG8RiB0N_70zrkwlaewcWPBNEPb4fhopGEn-u5VCvgPtC5xP0xkDlrXXPwdMebAaXOfehQTXBOoJEhCitMQzzJWW142-12_wv7cAGhT-7TCVSwWddwomgfe0XeUN3cPffw",
+      "types": [
+          "art_gallery",
+          "museum",
+          "point_of_interest",
+          "establishment"
+      ]
+  },
+  {
+      "formatted_address": "19 Rue de Seine, 75006 Paris, France",
+      "geometry": {
+          "location": {
+              "lat": 48.8564977,
+              "lng": 2.336772
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 48.8578415802915,
+                  "lng": 2.338031580291501
+              },
+              "southwest": {
+                  "lat": 48.8551436197085,
+                  "lng": 2.335333619708498
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "95286bf345d7a0aaf61b03676033b6133f3018da",
+      "name": "French Arts Factory",
+      "opening_hours": {
+          "open_now": false,
+          "weekday_text": []
+      },
+      "photos": [
+          {
+              "height": 2048,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/115434087635449498050/photos\">French Arts Factory</a>"
+              ],
+              "photo_reference": "CmRaAAAABz8B2jbHS4uOy7YucVgljoI-X9yGAHk565xygy320GwhAkvejjMthXaBpYzivTObypSrP3mHNVloVm7qCXxq9Rzy1QX9PoKW-tPZgG2IcLhKJwwhKaHdNeS-uLK6QIdPEhAcK4hROMoQ5W2Da-rWuEQXGhTZWxY--KmKpMMDT1f-8P8zqs4z-w",
+              "width": 1365
+          }
+      ],
+      "place_id": "ChIJqfHNYidu5kcRriiKB4onEto",
+      "rating": 5,
+      "reference": "CmRSAAAAzhSrzHWhWCJ0B5bVCuNz2AZq6No8-fNIYFzQjuGu0aPhmldUljy2J2ARcMUdbhzD9wqqyvvNZdDybiSEPFPtQlzoBrRjHMjchmbLU5XwevDU66uV0YdJg2ZeYoiN3ZlvEhAJqOClggVsFz1O8vzCmro2GhQv1v3OIrrmIfPwYv4PJYrOmk6MIg",
+      "types": [
+          "art_gallery",
+          "point_of_interest",
+          "establishment"
+      ]
+  },
+  {
+      "formatted_address": "51 Rue Volta, 75003 Paris, France",
+      "geometry": {
+          "location": {
+              "lat": 48.8671945,
+              "lng": 2.358355
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 48.8685413802915,
+                  "lng": 2.359712330291502
+              },
+              "southwest": {
+                  "lat": 48.8658434197085,
+                  "lng": 2.357014369708498
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "98f708691f9a83c1b4f6d62abdf69c3a5b190c21",
+      "name": "French Paper Art Gallery",
+      "opening_hours": {
+          "open_now": false,
+          "weekday_text": []
+      },
+      "place_id": "ChIJV5vglQ9u5kcRl5lM9sY5788",
+      "rating": 4.7,
+      "reference": "CmRSAAAASkWBgZxhLtbFUphBmNnrm47TIdOClUsTMDCrzSihQHwDCjuWW-vuLvXSBIR5Kxx4GiaNXXrgB224w_JSqwe1CxHICJHUSnDIHRZjYa3FpSdpxeaVBDhA5RpjtwQfFk5gEhDvogCkqbIQmRr-BtU4QCAdGhSp8Im6QOclIrytEeX0V9vqmaLLTg",
+      "types": [
+          "art_gallery",
+          "point_of_interest",
+          "establishment"
+      ]
+  },
+  {
+      "formatted_address": "108 Rue Vieille du Temple, 75004 Paris, France",
+      "geometry": {
+          "location": {
+              "lat": 48.8608911,
+              "lng": 2.3628921
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 48.8623047302915,
+                  "lng": 2.364162480291502
+              },
+              "southwest": {
+                  "lat": 48.85960676970851,
+                  "lng": 2.361464519708498
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "8c119ec946fe0afbc30eeaf5b7553b0e3a29f576",
+      "name": "Galerie Xippas",
+      "opening_hours": {
+          "open_now": false,
+          "weekday_text": []
+      },
+      "photos": [
+          {
+              "height": 3232,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/101186416960737354455/photos\">Mauricio DOrtona</a>"
+              ],
+              "photo_reference": "CmRaAAAANRCdtXy6JkIkdBV9eOXufYquechdOzvO1BhDGUP9NGCq7-wa4_sOd6DZx29SnCxWBts1QfkJqMBWhgZTlL0C-tcdtBfqg19ep_nEvD4o7ei0bSWDWZcmqqNlOBiQd4cNEhAlLsZx112e_xnQqGPDvhPKGhRL6mmAtcA6IGUpIat1vPDxH5lY6g",
+              "width": 3936
+          }
+      ],
+      "place_id": "ChIJjxactAZu5kcR_GZwehogl_k",
+      "reference": "CmRSAAAA6MmEiBkM2ElHBMWOhLHrJzeHbKM4kheJQNfU2cHr1W1P9StVfG4KIcTtnTgAGXoUTG582kKYE94HV9rfffNQQNQ5ujt_BAMec6RZJltk7ycu3fFkmnHxwyAc8iB_B1H-EhAAFQQoolXdObzamOWIJvBoGhTNKjWi-jn6su568oRmxkiLzmDN0Q",
+      "types": [
+          "art_gallery",
+          "point_of_interest",
+          "establishment"
+      ]
+  },
+  {
+      "formatted_address": "41 Rue de Verneuil, 75007 Paris, France",
+      "geometry": {
+          "location": {
+              "lat": 48.8583148,
+              "lng": 2.3277062
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 48.8597069802915,
+                  "lng": 2.329085230291502
+              },
+              "southwest": {
+                  "lat": 48.8570090197085,
+                  "lng": 2.326387269708498
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "0457ac904a53423771c93bad08bd1bd5d23031e6",
+      "name": "GALLERY France Paris primitive african art premier mask statue primitif",
+      "opening_hours": {
+          "open_now": false,
+          "weekday_text": []
+      },
+      "photos": [
+          {
+              "height": 639,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/107879420261335072556/photos\">armand auxietre</a>"
+              ],
+              "photo_reference": "CmRaAAAAaMpRvc1mFNDryb-AnbEXQzPSCdGwL2hv_8et8XrDfY_BasOtmmpGPR-B53TKejPVsigdPXJcfV9Uz2H8tO6z_nSBHaCfhnNFpHsgNKJGvpyGYRlphr0ap-ut67Av5LfKEhC0-Q0ynKcZI4SYgZ1v62RFGhR7hYFZBH2ku0ku4-7k6o-TeMaDPQ",
+              "width": 960
+          }
+      ],
+      "place_id": "ChIJs5ZkiClu5kcRdmJxfgf0hN0",
+      "rating": 4.5,
+      "reference": "CmRSAAAAZ-poEMfavzR3oMd2OaYyXS9QfRGXt8yp4AybwGP7DnbV4UdiWHhemN1vYpUMF40eR98BIyZSKwB3-jQHPwB3A4gY-pHZ4xgxrZS10VFordAq390i7FjDENPE3-r-UTuyEhBL-WXYdtjgfzeAdCovbqQJGhR3J3Fdtn_8bG6kNusXRzHjgoJfiA",
+      "types": [
+          "art_gallery",
+          "museum",
+          "store",
+          "point_of_interest",
+          "establishment"
+      ]
+  }
+]

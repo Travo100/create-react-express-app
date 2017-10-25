@@ -1,0 +1,5 @@
+.background-image {
+    height: 100%;
+    background-image: url("./paper.png");
+    background-size: cover;
+}

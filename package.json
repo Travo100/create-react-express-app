@@ -9,18 +9,29 @@
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "node scripts/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"    
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "axios": "^0.17.0",
     "body-parser": "^1.18.2",
     "express": "^4.15.4",
     "mongoose": "^4.12.3",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "react-form": "^2.0.1"
   }
 }
