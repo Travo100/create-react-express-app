@@ -1,11 +1,7 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const routes = require('./routes');
-
-// MODELS
-const User = require('./models/users.js');
 
 // Configure Express Sever
 const PORT = process.env.PORT || 3001;

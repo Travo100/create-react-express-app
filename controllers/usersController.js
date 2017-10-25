@@ -22,7 +22,6 @@ module.exports = {
             .catch( err => res.status( 422 ).json( err ) );
     },
     'findOne': function ( req, res ) {
-        console.log( req.body );
         User
             .findOne( { 'userName': req.body.userName, 'password': req.body.password } )
             .then( dbModel => {
