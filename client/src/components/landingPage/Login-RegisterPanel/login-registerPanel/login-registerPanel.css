@@ -1,0 +1,18 @@
+.login-container {  
+    margin: auto;
+    width: auto;
+    justify-content: center;
+}
+
+.container-fluid {
+    margin: auto;
+}
+
+#login-button {
+    margin-bottom : 10px;
+    margin-left: 10px;
+}
+
+Input, Button, a {
+    margin: auto;
+}

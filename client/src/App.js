@@ -8,15 +8,26 @@ import './components/Footer/Footer.css';
 import Wrapper from "./components/Wrapper";
 import Banner from "./components/Banner";
 import Corkboard from "./components/Corkboard";
-import { Button, Icon, SideNav, SideNavItem, Footer } from 'react-materialize';
+import { Row, Input, Button, Icon, SideNav, SideNavItem, Footer } from 'react-materialize';
 import PlacesSearchComponent from './placesSearch/PlacesSearchContainer';
+import LoginRegisterPanel from "./components/landingPage/Login-RegisterPanel/login-registerPanel/login-registerPanel";
+import Logo from "./components/landingPage/logo/logo";
+import About from "./components/landingPage/about/about";
+
 
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router>  
         <div>
-          <Route exact={true} path="/dashboard" render={() => ( 
+        <Route exact={true} path="/" component={Logo}/>
+        <div className="Buttons">
+          <Route exact={true} path="/" component={LoginRegisterPanel}/> 
+        </div>
+        
+        <Route exact={true} path="/" component={About}/>
+
+        <Route exact={true} path="/dashboard" render={() => ( 
             <SideNav
               trigger={<Button floating large className='searchbtn' waves='light' icon='add' />}
               options={{ closeOnClick: true }}
