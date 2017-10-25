@@ -10,7 +10,8 @@ import Banner from "./components/Banner";
 import Corkboard from "./components/Corkboard";
 import { Row, Input, Button, Icon, SideNav, SideNavItem, Footer } from 'react-materialize';
 import PlacesSearchComponent from './placesSearch/PlacesSearchContainer';
-import LoginRegisterPanel from "./components/landingPage/Login-RegisterPanel/login-registerPanel/login-registerPanel";
+import LoginButton from "./components/landingPage/Login-RegisterPanel/loginButton/loginButton";
+import RegisterButton from "./components/landingPage/Login-RegisterPanel/registerButton/registerButton"
 import Logo from "./components/landingPage/logo/logo";
 import About from "./components/landingPage/about/about";
 
@@ -22,7 +23,8 @@ class App extends Component {
         <div>
         <Route exact={true} path="/" component={Logo}/>
         <div className="Buttons">
-          <Route exact={true} path="/" component={LoginRegisterPanel}/> 
+          <Route exact={true} path="/" component={LoginButton}/> 
+          <Route exact={true} path="/" component={RegisterButton}/>
         </div>
         
         <Route exact={true} path="/" component={About}/>
